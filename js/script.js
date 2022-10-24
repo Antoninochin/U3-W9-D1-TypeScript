@@ -1,6 +1,6 @@
 "use strict";
-let bob = 50;
-let tom = 75;
+let bob = Math.floor((Math.random() * (100 - 1) + 1));
+let tom = Math.floor((Math.random() * (100 - 1) + 1));
 let numeroCasuale = Math.floor((Math.random() * (100 - 1) + 1));
 console.log(numeroCasuale)
 if (bob === numeroCasuale) {
@@ -16,3 +16,8 @@ if (tom === numeroCasuale) {
 if(bob && tom !== numeroCasuale){
     console.log('Nessuno dei due ha vinto')
 }
+
+// function randomNumber(min, max){
+//      let random = Math.floor((Math.random() * (1 - 10) + 1))
+//      document.getElementById('show').innerHTML = random
+//  }
